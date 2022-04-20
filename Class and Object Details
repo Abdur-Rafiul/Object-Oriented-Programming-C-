@@ -1,0 +1,45 @@
+#include<iostream>
+#include<conio.h>
+#include<iomanip>
+
+using namespace std;           //Rafiul Islam
+                               //Daffodil International University
+
+class Student
+ {
+
+   public:
+
+     int id;
+     double gpa;
+
+     void display()
+     {
+
+         cout<<"ID  = "<<id<<" "<<"GPA = "<<gpa<<endl;
+
+     }
+
+     void setValue(int x, double y)
+     {
+         id = x;
+         gpa = y;
+     }
+ };
+
+ int main()
+ {
+    Student Robin;
+    //Robin.id = 1;
+    // Robin.gpa = 3.500560;
+      Robin.setValue(100, 45.67);
+      Robin.display();
+
+    //cout<<"ID of Robin = "<<Robin.id<<" "<<"GPA of Robin = "<<setprecision(3)<<Robin.gpa<<endl;
+    //cout<<"ID of Robin = "<<Robin.id<<" "<<"GPA of Robin = "<<fixed<<Robin.gpa<<endl;
+
+     getch();
+
+     return 0;
+ }
+
