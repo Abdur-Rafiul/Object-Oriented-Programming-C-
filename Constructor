@@ -1,0 +1,72 @@
+#include<iostream>
+#include<conio.h>
+#include<iomanip>
+
+using namespace std;
+
+class Student          ///Rafiul Islam
+                       ///Daffodil International University
+                       ///01701-729512
+ {
+
+   public:
+
+     int id;
+     double gpa;
+     string name;
+
+     void display()
+     {
+
+         cout<<"ID  = "<<id<<" "<<"GPA = "<<gpa<<endl;
+
+     }
+
+     void display2()
+     {
+
+         cout<<"ID  = "<<id<<" "<<"GPA = "<<gpa<<" "<<"Name = "<<name<<endl;
+
+     }
+
+     Student(int x, double y) ///Constructor With Two Parameters
+     {
+         id = x;
+         gpa = y;
+     }
+
+     Student(string n, int x, double y) ///Constructor With Three Parameters
+     {
+         id = x;
+         gpa = y;
+         name = n;
+     }
+
+     Student() ///Default Constructor
+     {
+         cout <<"Default Constructor"<<endl;
+     }
+
+
+ };
+
+
+
+ int main()
+ {
+    Student Robin(100, 45.67);
+
+    Robin.display();
+
+    Student Rafiul;
+
+
+    Student Raju("Raju",19,3.58);
+    Raju.display2();
+
+     getch();
+
+     return 0;
+ }
+
+
