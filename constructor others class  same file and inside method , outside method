@@ -1,0 +1,68 @@
+#include<iostream>
+using namespace std;
+
+class Car
+{
+public:
+    string brand;            //Rafiul Islam
+    
+                            //Daffodil International University
+                            //01701-729512
+    string model;
+
+    Car(string x, string y);
+    void display();
+};
+
+
+
+
+Car::Car(string x, string y)    //:: it's a Scope Resolution Operator
+{
+    brand = x;
+    model = y;
+
+}
+
+void Car::display()
+{
+
+    cout <<brand  << " " << model << " " <<endl;
+
+}
+
+class biodata
+{
+public:
+    string name,id;
+
+    biodata(string n, string i)
+    {
+
+        name = n;
+        id = i;
+
+    }
+
+    void display()
+    {
+
+        cout << "MY Name is " << name <<"\nMY Student id is " <<id <<endl;
+    }
+};
+
+int main()
+{
+
+    Car c("BMW", "X5");
+    c.display();
+
+
+
+
+    biodata b("Robin Khan", "183-15-2265");
+    b.display();
+    return 0;
+}
+
+
