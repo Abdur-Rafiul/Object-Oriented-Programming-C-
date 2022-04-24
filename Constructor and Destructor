@@ -1,0 +1,46 @@
+///Destructor is an opposite of Constructo
+
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+class Student{
+  public:                          ///Rafiul Islam 
+                                  /// Daffodil International University 
+                                  /// 01701-729512
+    string Name, ID;
+    float Gpa;
+
+    Student(string name, string id, float gpa)
+
+    {
+
+       Name = name;
+       ID = id;
+       Gpa = gpa;
+
+    }
+
+    void display();
+   ~ Student(){
+
+          cout <<"Program is Destructor"<<endl;
+    }
+
+
+};
+
+void Student::display(){
+
+    cout <<"MY Name is "<<Name<<"\nMy University ID is "<<ID<<"\nGPA is "<<Gpa<<endl;
+
+}
+int main()
+{
+    Student s1("Rafiul Islam", "183-15-2265", 3.57);
+    s1.display();
+
+    Student s2("Rakibul Islam", "183-15-2264", 3.57);
+    s2.display();
+}
