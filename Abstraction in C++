@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+/*
+Rafiul Islam
+Daffodil International University
+01701-729512
+*/
+class MobileUser{
+public:
+    virtual void sendMessage() = 0;
+
+
+};
+
+class Rafiul : public MobileUser{
+public:
+    void sendMessage(){
+
+          cout <<"I am a Rafiul Islam"<<endl;
+
+    }
+
+
+};
+
+class Robin : public MobileUser{
+public:
+    void sendMessage(){
+
+          cout <<"My Name is Robin Khan"<<endl;
+
+    }
+
+
+};
+
+int main()
+{
+    MobileUser * m;
+    Rafiul R;
+    Robin R1;
+    m = &R;
+    m->sendMessage();
+
+    m = &R1;
+    m->sendMessage();
+
+
+}
