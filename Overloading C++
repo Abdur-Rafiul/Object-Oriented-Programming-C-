@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+/*
+Overloading Rules : Function name same and parameter are different , inheritance not involved
+Rafiul Islam
+Daffodil International University
+01701-729512
+*/
+class Student{
+public:
+
+       void PrintName(string fName)
+       {
+           cout <<"My First Name is "<<fName<<endl;
+       }
+
+       void PrintName(string fName, string lName)
+       {
+           cout <<"My First Name is "<<fName<<" "<<lName<<endl;
+       }
+
+       void PrintName()
+       {
+           cout <<"No Parameter"<<endl;
+       }
+
+    };
+
+
+int main()
+{
+    Student s;
+    s.PrintName("Rafiul");
+    s.PrintName("Rafiul","Islam");
+    s.PrintName();
+}
