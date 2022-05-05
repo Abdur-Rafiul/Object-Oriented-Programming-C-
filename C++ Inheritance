@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+/*
+Rafiul Islam
+Daffodil International University
+01701-729512
+*/
+class Teacher{
+    public:
+       string name;
+       int age;
+
+       void display1(string name,int age){
+
+            cout <<"Name of Teacher : "<<name<<"\nAge is "<<age<<endl;
+       }
+
+};
+
+class Student : public Teacher{
+    public:
+
+       int Roll;
+
+       void display2(int Roll){
+
+            cout <<"Name of Student : "<<Roll<<endl;
+
+       }
+
+};
+
+int main()
+{
+    Teacher t1;
+    t1.display1("Rafiul",23);
+    Student s1;
+    s1.display1("Marufa",15);
+    s1.display2(7);
+}
