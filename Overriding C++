@@ -1,0 +1,65 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+/*
+Overriding Rules : Function Name and Parameter must be same,Inheritance is involved
+Rafiul Islam
+Daffodil International University
+01701-729512
+*/
+class person{
+
+public:
+    string name;
+    void display(){
+
+         cout <<"hey User I am a Person"<<endl;
+
+    }
+
+    void printName(string name)
+    {
+        cout <<"My Name is "<<name<<endl;
+    }
+
+};
+
+class student : public person{
+
+public:
+    void display(){
+
+         cout <<"hey User I am a Student"<<endl;
+
+    }
+
+};
+
+class teacher : public person{
+
+public:
+    void display(){
+
+         cout <<"hey User I am a Teacher"<<endl;
+
+    }
+
+};
+
+int main()
+{
+
+    person p;
+    p.display();
+    p.printName("Rafiul Islam");
+
+    teacher t;
+    t.display();
+    t.printName("Rafiul Islam");
+
+    student s;
+    s.display();
+    s.printName("Rafiul Islam");
+
+    getch();
+}
